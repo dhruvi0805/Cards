@@ -2,6 +2,10 @@
 
 The Bauhaus school, founded by Walter Gropius in Weimar, Germany, unified fine art, craft, and technology under one pedagogical roof. Its core principle — **form follows function** — demanded that every visual decision serve a purpose. Faculty including Moholy-Nagy, Kandinsky, and Klee developed a foundation curriculum (Vorkurs) emphasizing geometric abstraction, primary colors, and modular composition. The school's output — from typography to furniture to architecture — established the blueprint for modern design education. When the Nazis closed it in 1933, its diaspora seeded modernist thinking worldwide.
 
+### Revised Body (Post-Gropius Critique)
+
+The Bauhaus school, founded by Walter Gropius in Weimar, Germany, pursued the **unity of all arts** (Einheit)—the synthesis of fine art, craft, and technology under one pedagogical vision. Unlike the slogan "form follows function" (attributed to Louis Sullivan's American tradition), the Bauhaus believed form and function should achieve **harmonious integration**. Gropius's pedagogical leadership rejected decoration in favor of rational design grounded in material reality and production methods, not stylized systems. The **Vorkurs** foundation curriculum (developed by Johannes Itten, later refined by Moholy-Nagy and others) taught hands-on material exploration, color theory informed by Kandinsky's spiritual aesthetics, and proportion systems derived from construction logic. The school operated as a **living laboratory**—sometimes chaotic, politically charged, constantly evolving—rather than a fixed blueprint. When the Nazis closed it in 1933, faculty and former students emigrated globally, carrying Bauhaus pedagogy and ideals to the Americas and beyond, fundamentally reshaping modern design education and architecture.
+
 **Tags:** Vorkurs · geometric abstraction · form follows function · modular grid · sans-serif typography
 **Examples:** 
 MoMA — Bauhaus Collection: https://www.moma.org/collection/terms/bauhaus 
