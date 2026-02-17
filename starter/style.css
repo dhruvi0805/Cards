@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bauhaus: #FF0000;
+    --color-swiss: #0066FF;
+    --color-newwave: #FFCC00;
+    --bg-dark: #0a0a0a;
+    --bg-card: #1a1a1a;
+    --text-light: #e0e0e0;
+    --text-bright: #ffffff;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+header.header {
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #333;
+}
+
+header.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-bright);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+}
+
+/* Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--bg-card);
+    border-radius: 0;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border-top: 4px solid;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.card-bauhaus {
+    border-top-color: var(--color-bauhaus);
+}
+
+.card-bauhaus .card-accent {
+    background-color: var(--color-bauhaus);
+}
+
+.card-swiss {
+    border-top-color: var(--color-swiss);
+}
+
+.card-swiss .card-accent {
+    background-color: var(--color-swiss);
+}
+
+.card-newwave {
+    border-top-color: var(--color-newwave);
+}
+
+.card-newwave .card-accent {
+    background-color: var(--color-newwave);
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    transform: translateY(-4px);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    letter-spacing: -0.01em;
+    color: var(--text-bright);
+}
+
+.card-dates {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    background-color: #2a2a2a;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-light);
+    border: 1px solid #333;
+}
+
+.card-bauhaus .tag {
+    border-color: rgba(255, 0, 0, 0.3);
+    color: var(--text-bright);
+}
+
+.card-swiss .tag {
+    border-color: rgba(0, 102, 255, 0.3);
+    color: var(--text-bright);
+}
+
+.card-newwave .tag {
+    border-color: rgba(255, 204, 0, 0.3);
+    color: var(--text-bright);
+}
+
+.card-accountability {
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    margin-top: auto;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #999;
+}
+
+.card-accountability p {
+    margin: 0;
+}
+
+.card-accountability strong {
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    header.header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.75rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,30 +1,25 @@
 # Curator Cards - Build Specification
 
 ## Project Overview
-Build an interactive bento box-style card layout displaying three design movements (Bauhaus, Swiss Style, New Wave Typography) with click-to-swap functionality and Swiss Design aesthetic.
+Build a static three-column card layout displaying three design movements (Bauhaus, Swiss Style, New Wave Typography) with dark theme and bright color accents. Swiss Design aesthetic with modern sensibilities.
 
 ## Layout & Structure
 - **Title:** "Curator Cards"
-- **Layout Type:** Bento box grid
-  - Left side: 1 large card (~60% width)
-  - Right side: 2 small cards stacked vertically (~40% width)
+- **Layout Type:** Equal-sized 3-column grid
+  - All cards: same width, same height, same information structure
+  - Responsive: 2-column on tablets, 1-column on mobile
 - **Typography:** Modern sans-serif (system fonts acceptable)
-- **Initial State:** Bauhaus displayed as the large card on left; Swiss Style and New Wave as small cards on right
+- **Static:** No JavaScript, no interactivity
 
-## Card Content & Display Modes
+## Card Content & Display Format
 
-### Small Card Format
-- Movement name
-- Dates (e.g., "1919–1933")
-- Short description (1-2 sentences max)
-- Tags (as individual tag elements)
-
-### Large Card Format
-- Movement name
-- Dates
+### Every Card Shows
+- Color-coded accent bar at top (4px solid)
+- Movement name (Heading 2)
+- Dates (e.g., "1919–1933") - uppercase, muted gray
 - Full description paragraph
-- Tags
-- Accountability statement (from CURATOR_NOTES.md)
+- Tags (multiple, small labels with subtle colored borders)
+- Accountability statement (smaller text, top-bordered)
 
 ## Data Source
 All content pulled from `CURATOR_NOTES.md`:
@@ -32,39 +27,38 @@ All content pulled from `CURATOR_NOTES.md`:
 2. **Swiss Style / International Typographic Style (1950s–1970s)**
 3. **New Wave Typography (1970s–1980s)**
 
-## Interactivity
-- **Trigger:** Click on any small card
-- **Behavior:** 
-  - Clicked small card expands to large card (left side)
-  - Previously large card shrinks to small card and fills the clicked card's spot
-  - Smooth animation/transition during swap (fade/slide)
-- **No page reload** - all client-side JavaScript
-
 ## Color Scheme
-- **Bauhaus:** Red accent (#FF0000 or similar bold red)
-- **Swiss Style:** Blue accent (#0066FF or similar bold blue)
-- **New Wave:** Yellow accent (#FFCC00 or similar bold yellow)
-- **Backgrounds & Text:** Black, white, neutral grays for contrast
 
-### Background Behavior
-- Static decorative shapes positioned behind all cards (geometric shapes reflecting Swiss Design principles)
-- Background color transitions to a light tint of the active card's accent color when swapped
-- All shapes remain static; only background color changes
+### Background
+- **Page/Body:** #0a0a0a (near black, very dark)
+- **Card Background:** #1a1a1a (dark gray)
+
+### Accent Colors (per movement)
+- **Bauhaus:** Red (#FF0000) - top bar, tag borders
+- **Swiss Style:** Blue (#0066FF) - top bar, tag borders
+- **New Wave:** Yellow (#FFCC00) - top bar, tag borders
+
+### Text Colors
+- **Titles:** #ffffff (bright white)
+- **Body text:** #e0e0e0 (light gray)
+- **Dates:** #888888 (muted gray)
+- **Tags:** #e0e0e0 with colored borders (1px, semi-transparent colored)
+- **Accountability:** #999999 (dimmer gray) with #e0e0e0 for bold text
 
 ## Visual Effects
-- **Drop shadows** on all cards for depth
-- **Smooth transitions** when cards swap (animation duration: ~300-500ms)
-- **Clean, rigid spacing** following Swiss grid principles
-- Shapes (circles, rectangles, etc.) positioned asymmetrically behind cards, not obstructing card content
+- **Drop shadows** on all cards (dark shadow for depth in dark theme)
+- **Hover effect:** Slight lift (translateY -4px) + enhanced shadow
+- **Card styling:** Flat design, no border-radius, 4px colored top bar
+- **Flexbox layout** on cards to push accountability to bottom
 
 ## Technical Requirements
-- HTML structure (semantic, accessible)
-- CSS for layout, colors, shadows, animations
-- JavaScript for click interaction and card swapping logic
-- No external libraries required (vanilla JS)
-- Responsive-friendly (mobile considerations optional but welcome)
+- HTML structure (semantic, accessible, static)
+- CSS for layout, colors, responsive grid, shadows
+- NO JavaScript - completely static page
+- No external libraries required
+- Responsive: 3-column (desktop) → 2-column (tablet) → 1-column (mobile)
 
 ## Files to Modify
-- `index.html` - Structure
-- `style.css` - Layout, colors, animations
-- (Optional: `script.js` or inline `<script>` tag for interactivity)
+- `index.html` - Structure (3 equal cards, all info displayed)
+- `style.css` - Layout (grid), colors (dark theme + bright accents), shadows, hover effects
+- `script.js` - DELETE/REMOVE (not needed for static page)
