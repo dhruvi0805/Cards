@@ -20,6 +20,10 @@ MoMA — Walter Gropius: https://www.moma.org/artists/2359-walter-gropius
 
 Emerging from Switzerland and Germany, this movement refined Bauhaus principles into a cohesive, global visual language. Led by figures like Josef Müller-Brockmann and Armin Hofmann, the style prioritized **objectivity, legibility, and anonymity**. It introduced the mathematically constructed grid as a tool for organizing information and championed the use of flush-left, ragged-right sans-serif typography (notably Helvetica and Univers). By removing the designer's personal "signature," the movement sought a universal clarity that could transcend national borders, making it the gold standard for corporate identity and public signage.
 
+### Revised Body (Post-Hofmann Critique)
+
+Swiss Style emerged distinctly from **Switzerland**—synthesizing Swiss graphic and typographic traditions, Bauhaus principles, and systematic order into a new visual language. Led by Josef Müller-Brockmann and Armin Hofmann, the movement prioritized **clarity of communication**, not anonymity. The proportional, systematic grid was the foundational tool, deriving its logic from **content and spatial harmony** rather than abstract mathematics. Sans-serif typefaces (Helvetica, Univers) and asymmetric layouts functioned as disciplined method, not mere aesthetics. Crucially, the designer did not disappear; the designer made structure *visible* and served the message through restrained, intentional formal choices. By deploying essential visual language without decoration, Swiss Style established a **universal system** for order and clarity that transcended national borders, becoming the gold standard for corporate identity, public signage, and information design. The movement's utopian vision held that clear, rational form could enhance visual culture and communication globally.
+
 **Tags:** mathematical grid · objectivity · Helvetica · asymmetric layout · sans-serif
 **Examples:** 
 Josef Müller-Brockmann — Zurich Town Hall Posters: https://socks-studio.com/2016/11/30/joseph-muller-brockmann-musica-viva-posters-for-the-zurich-tonhalle/
