@@ -19,6 +19,45 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-light);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Swiss Design Background Shapes */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    background: 
+        /* Large red circle - top right */
+        radial-gradient(circle 400px at 85% 15%, rgba(255, 0, 0, 0.25) 0%, transparent 100%),
+        /* Large blue rectangle - left side */
+        linear-gradient(45deg, rgba(0, 102, 255, 0.2) 0%, transparent 100%) -200px -200px / 600px 600px no-repeat,
+        /* Yellow circle - bottom */
+        radial-gradient(circle 350px at 35% 85%, rgba(255, 204, 0, 0.2) 0%, transparent 100%);
+}
+
+body::after {
+    background:
+        /* Secondary shapes - Swiss grid style */
+        linear-gradient(90deg, transparent 45%, rgba(0, 102, 255, 0.15) 45%, rgba(0, 102, 255, 0.15) 55%, transparent 55%),
+        linear-gradient(0deg, transparent 45%, rgba(255, 0, 0, 0.15) 45%, rgba(255, 0, 0, 0.15) 55%, transparent 55%);
+    background-size: 400px 400px;
+    animation: moveBackground 60s infinite linear;
+}
+
+@keyframes moveBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(400px, 400px); }
 }
 
 header.header {
@@ -26,6 +65,8 @@ header.header {
     text-align: center;
     margin-bottom: 3rem;
     border-bottom: 1px solid #333;
+    position: relative;
+    z-index: 1;
 }
 
 header.header h1 {
@@ -39,6 +80,8 @@ header.header h1 {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem 4rem 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 /* Cards Grid */
@@ -122,7 +165,6 @@ header.header h1 {
     line-height: 1.7;
     color: var(--text-light);
     margin-bottom: 1.5rem;
-    flex-grow: 1;
 }
 
 .card-tags {
@@ -160,6 +202,76 @@ header.header h1 {
     color: var(--text-bright);
 }
 
+/* Card Sections */
+.card-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.card-section:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.card-section strong {
+    display: block;
+    color: var(--text-bright);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.examples-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.examples-list li {
+    margin-bottom: 0.5rem;
+}
+
+.examples-list a {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition: all 0.2s ease;
+}
+
+.card-bauhaus .examples-list a {
+    border-bottom-color: rgba(255, 0, 0, 0.5);
+}
+
+.card-bauhaus .examples-list a:hover {
+    color: var(--color-bauhaus);
+    border-bottom-color: var(--color-bauhaus);
+}
+
+.card-swiss .examples-list a {
+    border-bottom-color: rgba(0, 102, 255, 0.5);
+}
+
+.card-swiss .examples-list a:hover {
+    color: var(--color-swiss);
+    border-bottom-color: var(--color-swiss);
+}
+
+.card-newwave .examples-list a {
+    border-bottom-color: rgba(255, 204, 0, 0.5);
+}
+
+.card-newwave .examples-list a:hover {
+    color: var(--color-newwave);
+    border-bottom-color: var(--color-newwave);
+}
+
+.card-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
 .card-accountability {
     padding-top: 1.5rem;
     border-top: 1px solid #333;
@@ -175,6 +287,9 @@ header.header h1 {
 
 .card-accountability strong {
     color: var(--text-light);
+    font-size: 0.85rem;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 /* Responsive Design */
