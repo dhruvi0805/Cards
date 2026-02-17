@@ -1,2 +1,4 @@
 Reflection:
 In this assigment I learned how to prompt and challenge AI suggestions. I used the AI to ask me clarifying questions in terms of what the webpage should look like to reduce AI hallucination. In addition to that, when it made suggestions, I dove deeper into it and researched each art style to get a better insight. 
+
+Link: https://dhruvi0805.github.io/Cards/ 
